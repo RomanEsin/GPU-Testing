@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304B136C22FD9E0A008F765B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B136B22FD9E0A008F765B /* AppDelegate.swift */; };
+		304B136E22FD9E0A008F765B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B136D22FD9E0A008F765B /* ViewController.swift */; };
+		304B137022FD9E13008F765B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304B136F22FD9E13008F765B /* Assets.xcassets */; };
+		304B137322FD9E13008F765B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304B137122FD9E13008F765B /* Main.storyboard */; };
+		304B137C22FD9F01008F765B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B137B22FD9F01008F765B /* GameView.swift */; };
+		304B137E22FDA14B008F765B /* MyShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 304B137D22FDA14B008F765B /* MyShader.metal */; };
+		304B138022FE5F70008F765B /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B137F22FE5F70008F765B /* Engine.swift */; };
+		304B138222FF19C1008F765B /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B138122FF19C1008F765B /* ShaderLibrary.swift */; };
+		304B138422FF1A11008F765B /* VertexLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B138322FF1A11008F765B /* VertexLibrary.swift */; };
+		304B138622FF1A44008F765B /* RenderPipelineLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B138522FF1A44008F765B /* RenderPipelineLibrary.swift */; };
+		304B138822FF1CBA008F765B /* RenderPipelineStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B138722FF1CBA008F765B /* RenderPipelineStateLibrary.swift */; };
+		304B138D22FF1F31008F765B /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B138C22FF1F31008F765B /* GameObject.swift */; };
+		304B138F22FFAD4D008F765B /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B138E22FFAD4D008F765B /* Render.swift */; };
+		304B139122FFB352008F765B /* MeshLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B139022FFB352008F765B /* MeshLibrary.swift */; };
+		30C6F90223002A650064C21B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F90123002A650064C21B /* Player.swift */; };
+		30C6F90423002ADB0064C21B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F90323002ADB0064C21B /* Node.swift */; };
+		30C6F907230066BB0064C21B /* Matrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F906230066BB0064C21B /* Matrices.swift */; };
+		30C6F90B2301588A0064C21B /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F90A2301588A0064C21B /* Scene.swift */; };
+		30C6F90D23015A1F0064C21B /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F90C23015A1F0064C21B /* SceneManager.swift */; };
+		30C6F90F23015EC30064C21B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F90E23015EC30064C21B /* Preferences.swift */; };
+		30C6F912230168CE0064C21B /* Keycodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F911230168CE0064C21B /* Keycodes.swift */; };
+		30C6F914230168DE0064C21B /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F913230168DE0064C21B /* Keyboard.swift */; };
+		30C6F91623016A9D0064C21B /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F91523016A9D0064C21B /* Mouse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		304B136822FD9E0A008F765B /* GPU Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPU Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		304B136B22FD9E0A008F765B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		304B136D22FD9E0A008F765B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		304B136F22FD9E13008F765B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304B137222FD9E13008F765B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		304B137422FD9E13008F765B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304B137522FD9E13008F765B /* GPU_Testing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPU_Testing.entitlements; sourceTree = "<group>"; };
+		304B137B22FD9F01008F765B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		304B137D22FDA14B008F765B /* MyShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MyShader.metal; sourceTree = "<group>"; };
+		304B137F22FE5F70008F765B /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		304B138122FF19C1008F765B /* ShaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderLibrary.swift; sourceTree = "<group>"; };
+		304B138322FF1A11008F765B /* VertexLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexLibrary.swift; sourceTree = "<group>"; };
+		304B138522FF1A44008F765B /* RenderPipelineLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineLibrary.swift; sourceTree = "<group>"; };
+		304B138722FF1CBA008F765B /* RenderPipelineStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineStateLibrary.swift; sourceTree = "<group>"; };
+		304B138C22FF1F31008F765B /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		304B138E22FFAD4D008F765B /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
+		304B139022FFB352008F765B /* MeshLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshLibrary.swift; sourceTree = "<group>"; };
+		30C6F90123002A650064C21B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		30C6F90323002ADB0064C21B /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		30C6F906230066BB0064C21B /* Matrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrices.swift; sourceTree = "<group>"; };
+		30C6F90A2301588A0064C21B /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		30C6F90C23015A1F0064C21B /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		30C6F90E23015EC30064C21B /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		30C6F911230168CE0064C21B /* Keycodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keycodes.swift; sourceTree = "<group>"; };
+		30C6F913230168DE0064C21B /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		30C6F91523016A9D0064C21B /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304B136522FD9E0A008F765B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304B135F22FD9E0A008F765B = {
+			isa = PBXGroup;
+			children = (
+				304B136A22FD9E0A008F765B /* GPU Testing */,
+				304B136922FD9E0A008F765B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		304B136922FD9E0A008F765B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304B136822FD9E0A008F765B /* GPU Testing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304B136A22FD9E0A008F765B /* GPU Testing */ = {
+			isa = PBXGroup;
+			children = (
+				304B136B22FD9E0A008F765B /* AppDelegate.swift */,
+				304B136D22FD9E0A008F765B /* ViewController.swift */,
+				304B136F22FD9E13008F765B /* Assets.xcassets */,
+				304B137122FD9E13008F765B /* Main.storyboard */,
+				304B138B22FF1DCD008F765B /* Views */,
+				30C6F905230066A80064C21B /* Math */,
+				304B138922FF1DBC008F765B /* Engine */,
+				30C6F9092301586B0064C21B /* Scene */,
+				30C6F908230139CC0064C21B /* Node */,
+				304B139222FFB7ED008F765B /* Libraries */,
+				304B138A22FF1DC7008F765B /* Shaders */,
+				30C6F910230168B90064C21B /* Input */,
+				304B137422FD9E13008F765B /* Info.plist */,
+				304B137522FD9E13008F765B /* GPU_Testing.entitlements */,
+			);
+			path = "GPU Testing";
+			sourceTree = "<group>";
+		};
+		304B138922FF1DBC008F765B /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				304B137F22FE5F70008F765B /* Engine.swift */,
+				30C6F90E23015EC30064C21B /* Preferences.swift */,
+				304B138E22FFAD4D008F765B /* Render.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		304B138A22FF1DC7008F765B /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				304B137D22FDA14B008F765B /* MyShader.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		304B138B22FF1DCD008F765B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304B137B22FD9F01008F765B /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		304B139222FFB7ED008F765B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				304B139022FFB352008F765B /* MeshLibrary.swift */,
+				304B138122FF19C1008F765B /* ShaderLibrary.swift */,
+				304B138322FF1A11008F765B /* VertexLibrary.swift */,
+				304B138522FF1A44008F765B /* RenderPipelineLibrary.swift */,
+				304B138722FF1CBA008F765B /* RenderPipelineStateLibrary.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		30C6F905230066A80064C21B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F906230066BB0064C21B /* Matrices.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		30C6F908230139CC0064C21B /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F90323002ADB0064C21B /* Node.swift */,
+				304B138C22FF1F31008F765B /* GameObject.swift */,
+				30C6F90123002A650064C21B /* Player.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		30C6F9092301586B0064C21B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F90A2301588A0064C21B /* Scene.swift */,
+				30C6F90C23015A1F0064C21B /* SceneManager.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		30C6F910230168B90064C21B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F913230168DE0064C21B /* Keyboard.swift */,
+				30C6F911230168CE0064C21B /* Keycodes.swift */,
+				30C6F91523016A9D0064C21B /* Mouse.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304B136722FD9E0A008F765B /* GPU Testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304B137822FD9E13008F765B /* Build configuration list for PBXNativeTarget "GPU Testing" */;
+			buildPhases = (
+				304B136422FD9E0A008F765B /* Sources */,
+				304B136522FD9E0A008F765B /* Frameworks */,
+				304B136622FD9E0A008F765B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPU Testing";
+			productName = "GPU Testing";
+			productReference = 304B136822FD9E0A008F765B /* GPU Testing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304B136022FD9E0A008F765B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Mariya Esina";
+				TargetAttributes = {
+					304B136722FD9E0A008F765B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 304B136322FD9E0A008F765B /* Build configuration list for PBXProject "GPU Testing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 304B135F22FD9E0A008F765B;
+			productRefGroup = 304B136922FD9E0A008F765B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304B136722FD9E0A008F765B /* GPU Testing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304B136622FD9E0A008F765B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304B137022FD9E13008F765B /* Assets.xcassets in Resources */,
+				304B137322FD9E13008F765B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304B136422FD9E0A008F765B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304B137E22FDA14B008F765B /* MyShader.metal in Sources */,
+				304B138622FF1A44008F765B /* RenderPipelineLibrary.swift in Sources */,
+				30C6F914230168DE0064C21B /* Keyboard.swift in Sources */,
+				304B138422FF1A11008F765B /* VertexLibrary.swift in Sources */,
+				304B136E22FD9E0A008F765B /* ViewController.swift in Sources */,
+				30C6F912230168CE0064C21B /* Keycodes.swift in Sources */,
+				30C6F90B2301588A0064C21B /* Scene.swift in Sources */,
+				304B138D22FF1F31008F765B /* GameObject.swift in Sources */,
+				30C6F90223002A650064C21B /* Player.swift in Sources */,
+				304B137C22FD9F01008F765B /* GameView.swift in Sources */,
+				30C6F90F23015EC30064C21B /* Preferences.swift in Sources */,
+				304B139122FFB352008F765B /* MeshLibrary.swift in Sources */,
+				30C6F907230066BB0064C21B /* Matrices.swift in Sources */,
+				30C6F90D23015A1F0064C21B /* SceneManager.swift in Sources */,
+				304B136C22FD9E0A008F765B /* AppDelegate.swift in Sources */,
+				304B138822FF1CBA008F765B /* RenderPipelineStateLibrary.swift in Sources */,
+				30C6F91623016A9D0064C21B /* Mouse.swift in Sources */,
+				304B138222FF19C1008F765B /* ShaderLibrary.swift in Sources */,
+				304B138F22FFAD4D008F765B /* Render.swift in Sources */,
+				304B138022FE5F70008F765B /* Engine.swift in Sources */,
+				30C6F90423002ADB0064C21B /* Node.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		304B137122FD9E13008F765B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304B137222FD9E13008F765B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304B137622FD9E13008F765B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		304B137722FD9E13008F765B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		304B137922FD9E13008F765B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GPU Testing/GPU_Testing.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JK457FFM94;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "GPU Testing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MariyaEsina.GPU-Testing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		304B137A22FD9E13008F765B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GPU Testing/GPU_Testing.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JK457FFM94;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "GPU Testing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MariyaEsina.GPU-Testing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304B136322FD9E0A008F765B /* Build configuration list for PBXProject "GPU Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304B137622FD9E13008F765B /* Debug */,
+				304B137722FD9E13008F765B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304B137822FD9E13008F765B /* Build configuration list for PBXNativeTarget "GPU Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304B137922FD9E13008F765B /* Debug */,
+				304B137A22FD9E13008F765B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304B136022FD9E0A008F765B /* Project object */;
+}
